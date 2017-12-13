@@ -19,6 +19,11 @@
     		<!-- Content -->
     		<div id="post-body-content">
 				<div id="normal-sortables" class="meta-box-sortables ui-sortable">
+					<div class="postbox">
+		                    <?php insert_ads_vi_plugin_card(); 
+							//insert_ads_inpostads_form_get_content('above');
+							?>
+		            </div>
 	                <form action="edit.php?post_type=<?php echo $this->plugin->posttype; ?>&page=<?php echo $this->plugin->name; ?>" method="post">
 		                <div class="postbox">
 		                    <h3 class="hndle"><?php _e( 'Where do you want ads to display?', $this->plugin->name ); ?></h3>
@@ -72,8 +77,7 @@
 	                </form>
 					
 					<div class="postbox">
-		                    <?php insert_ads_vi_plugin_card(); 
-							insert_ads_inpostads_plugin_card();
+		                    <?php insert_ads_inpostads_plugin_card();
 							//insert_ads_inpostads_form_get_content('above');
 							?>
 		            </div>

@@ -273,7 +273,7 @@ p.viError {
     float: left;
     width: calc(100% - 348px);
 	margin-top: 38px;
-	min-width: 130px;
+	min-width: 120px;
 	margin-bottom: 15px;
 }
 

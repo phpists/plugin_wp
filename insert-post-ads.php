@@ -558,19 +558,26 @@ require_once(dirname(__FILE__).'/controls/controls.php');
 /* Begin Admin Notice */
 add_action('admin_notices', 'insert_ads_admin_notices');
 function insert_ads_admin_notices() {	
-	if(current_user_can('manage_options')) {
+	if(current_user_can('manage_options') && get_transient('insert_ads_vi_api_authetication_token')) {
 		$userId = get_current_user_id();
 		if(!get_user_meta($userId, 'wp_insert_'.WP_INSADS_VERSION.'_admin_notice_dismissed', true)) {
 			echo '<div class="notice notice-success insert_ads_notice is-dismissible" style="padding: 15px;">';
 				echo '<div style="float: left; max-width: 875px; font-size: 14px; font-family: Arial; line-height: 18px; color: #232323;">';
 					echo '<p>Thank you for updating <b>Insert Post ADS</b>.</p>';
-					echo '<p>This update features <b>vi stories</b> from video intelligence. A video player that will supply both video content and video advertising. Install it now to increase time-on-page, and your revenue thanks to high CPMs. Read the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQ</a>.</p>';
+					echo '<p>This update features Vi Stories from video intelligence - a video player that will supply both video content and video advertising.</p>';
+					echo '<ul class="vi-list">';
+						echo '<li>The set up takes only a few minutes</li>';
+						echo '<li>Up to 10x higher CPM than traditional display advertising</li>';
+						echo '<li>Users spend longer on your site thanks to professional video content</li>';
+						echo '<li>The video player is customizable to match your site</li>';
+					echo '</ul>';
+					echo '<p>Install it now to increase time-on-page, and your revenue thanks to high CPMs. Read the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQ</a>.</p>';
 				echo '</div>';
 				echo '<img style="float: right; margin-right: 20px; margin-top: 13px;" src="'.WP_INSADS_URL.'images/vi-big-logo.png?'.WP_INSADS_VERSION.'" />';
 				echo '<div class="clear"></div>';
-				if(!get_transient('insert_ads_vi_api_authetication_token')) {
-					echo '<a id="insert_ads_vi_signup2" href="javascript:;" class="button button-primary">Sign Up</a>';
-				}
+			
+					
+				
 				echo '<input type="hidden" id="wp_insert_admin_notice_nonce" name="wp_insert_admin_notice_nonce" value="'.wp_create_nonce('insert-ads-admin-notice').'" />';
 				echo '<input type="hidden" id="wp_insert_admin_notice_ajax" name="wp_insert_admin_notice_ajax" value="'.admin_url('admin-ajax.php').'" />';
 			echo '</div>';
