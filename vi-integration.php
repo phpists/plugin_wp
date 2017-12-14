@@ -15,7 +15,7 @@ function insert_ads_vi_plugin_card_content($isLoggedin = false, $isAjaxRequest =
 	if(!$isLoggedin) {
 		echo '<div class="plugin-card-top">';
 			echo '<div class="plugin-card-top-header">';
-				echo '<h4>Video content and video advertising – powered by video intelligence</h4>';
+				echo '<h4>Start earning with vi stories</h4>';
 			echo '</div>';
 			echo '<div class="plugin-card-top-content" '.(($isAjaxRequest)?'style="opacity: 0;"':'').'>';
 				echo '<p>Thank you for updating Insert Post ADS!</p>';	
@@ -41,10 +41,10 @@ function insert_ads_vi_plugin_card_content($isLoggedin = false, $isAjaxRequest =
 		$dashboardURL = insert_ads_vi_api_get_dashboardurl();
 		echo '<div class="plugin-card-top">';
 			echo '<div class="plugin-card-top-header">';
-				echo '<h4>Video content and video advertising – powered by video intelligence</h4>';
+				echo '<h4>Monetization with vi stories</h4>';
 			echo '</div>';
 			echo '<div class="plugin-card-top-content" '.(($isAjaxRequest)?'style="opacity: 0;"':'').'>';
-				echo '<p>Below you can see your current revenues.<br />Don’t see anything? Consult the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQs</a>.</p>';
+				echo '<p>Below you can see your current revenues. <span class="pl-right">Don’t see anything? Consult the <a target="_blank" href="https://www.vi.ai/frequently-asked-questions-vi-stories-for-wordpress/?utm_source=WordPress&utm_medium=Plugin%20FAQ&utm_campaign=WP%20Insert">FAQs</a>.</span></p>';
 				echo '<div id="insert_ads_vi_earnings_wrapper">';
 					echo '<div class="insert_ads_ajaxloader"></div>';
 				echo '</div>';

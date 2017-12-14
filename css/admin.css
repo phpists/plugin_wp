@@ -3,10 +3,11 @@ body.post-type-insertpostads #minor-publishing-actions {
 	display: none;
 }
 .plugin-card.vi-card{
-	    border: 3px solid #9a02c0;
+	/*    border: 3px solid #9a02c0;*/
 		    float: none;
     width: 100%;
     margin: 0;
+	border:0;
 }
 .vi-list{
 	    list-style-type: disc;
@@ -21,4 +22,7 @@ body.post-type-insertpostads #minor-publishing-actions {
 .vi-card #insert_ads_vi_earnings_wrapper #insert_ads_vi_chart_wrapper{
 	width:75% !important;
 	height:auto !important;
+}
+.insert_ads_notice {
+	    border-left-color: #000000 !important;
 }

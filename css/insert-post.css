@@ -226,6 +226,8 @@
 .vi-card .plugin-card-top .plugin-card-top-content ul {
     margin: 10px 0;
     padding: 0 0 0 15px;
+	    list-style-type: disc;
+    margin-left: 20px;
 }
 
 .vi-card .plugin-card-top .plugin-card-top-content ul li {
@@ -494,4 +496,64 @@ p.viError {
 		width: auto;
 		float: none;
 	}
+}
+
+
+.vi-card .plugin-card-top .plugin-card-top-header {
+    border-bottom: 1px solid #eee;
+    padding: 15px 30px;
+}
+.vi-card .plugin-card-top .plugin-card-top-content{
+	padding: 0 30px 5px;
+}
+.vi-card .plugin-card-bottom {
+    text-align: right;
+    padding: 5px 30px;
+}
+.pl-right{
+	float:right;
+}
+.vi-card #insert_ads_vi_earnings_wrapper {
+    margin-top: 0;
+}
+.vi-card #insert_ads_vi_earnings_wrapper #insert_ads_vi_chart_wrapper canvas{
+	max-height:150px;
+}
+#poststuff .stuffbox>h3, #poststuff h2, #poststuff h3.hndle, #poststuff .inside{
+	    padding: 15px 30px;
+}
+form > .postbox .inside, form > .postbox .inside > p:first-child{
+	margin-top:0;
+}
+.ins-settings{
+	float:left;
+	width:49%;
+}
+.vi-choose{
+	float:right;
+	width:49%;
+}
+.vi-choose .plugin-card{
+	width:100%;
+	margin:0;
+	border:0;
+}
+.vi-choose .plugin-card-bottom{
+	background-color:white;
+	border:0;
+}
+.vi-choose .plugin-card-bottom{
+	    padding: 5px 30px;
+		    padding-bottom: 14px;
+}
+.vi-ct{
+	    float: left;
+    width: 49%;
+}
+.ins-settings input[type="submit"]{
+	    position: absolute;
+    bottom: -50px;
+}
+.plugin-card.vi-card .plugin-card-bottom > span{
+	    margin-top: 12px;
 }

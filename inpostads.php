@@ -3,16 +3,14 @@
 add_action('insert_ads_plugin_card', 'insert_ads_inpostads_plugin_card', 10);
 function insert_ads_inpostads_plugin_card() {
 	echo '<div class="plugin-card">';
-		echo '<div class="plugin-card-top">';
-			echo '<h4>In-Post Ads</h4>';
-			echo '<p>Ads shown within the post content.</p>';
-		echo '</div>';
+		echo '<h3 class="hndle">In-Post Ads</h3>';
 		echo '<div class="plugin-card-bottom">';
-			echo '<p><a id="insert_ads_inpostads_above" href="javascript:;">Ad - Above Post Content</a></p>';
+			echo '<p><strong>Ads shown within the post content.</strong></p>';
+			echo '<div class="vi-ct"><p><a id="insert_ads_inpostads_above" href="javascript:;">Ad - Above Post Content</a></p>';
 			echo '<p><a id="insert_ads_inpostads_middle" href="javascript:;">Ad - Middle of Post Content</a></p>';
-			echo '<p><a id="insert_ads_inpostads_below" href="javascript:;">Ad - Below Post Content</a></p>';
-			echo '<p><a id="insert_ads_inpostads_left" href="javascript:;">Ad - Left of Post Content</a></p>';
-			echo '<p><a id="insert_ads_inpostads_right" href="javascript:;">Ad - Right of Post Content</a></p>';
+			echo '<p><a id="insert_ads_inpostads_below" href="javascript:;">Ad - Below Post Content</a></p></div>';
+			echo '<div class="vi-ct"><p><a id="insert_ads_inpostads_left" href="javascript:;">Ad - Left of Post Content</a></p>';
+			echo '<p><a id="insert_ads_inpostads_right" href="javascript:;">Ad - Right of Post Content</a></p></div>';
 		echo '</div>';
 	echo '</div>';
 	echo '<input type="hidden" id="insert_ads_admin_ajax" name="insert_ads_admin_ajax" value="' . admin_url('admin-ajax.php') . '" /><input type="hidden" id="insert_ads_nonce" name="insert_ads_nonce" value="' . wp_create_nonce('insert-ads') . '" />';
